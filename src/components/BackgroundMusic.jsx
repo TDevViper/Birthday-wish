@@ -33,7 +33,8 @@ const BackgroundMusic = () => {
     <>
       {/* AUDIO ELEMENT */}
       <audio ref={audioRef} loop>
-        <source src="/public/memories/Pehli Nazar Mein Race 320 Kbps.mp3" type="audio/mpeg" />
+        <source src="/memories/Pehli Nazar Mein Race 320 Kbps.mp3" type="audio/mpeg" />
+
       </audio>
 
       {/* MUSIC TOGGLE BUTTON */}
