@@ -21,25 +21,32 @@ const Letter = ({ onClose }) => {
         <div className="letter-content">
           <h2 className="letter-title">Dear Billi, 💌</h2>
           <div className="letter-body">
-            <p>Happy 19th Birthday! 🎉</p>
+            <p>Happy 19th Birthday! 🐱 🎉</p>
             <p>
-              Today, the stars shine just like they did on November 14, 2006, when you entered this world.
-              And honestly? The universe hasn't been the same since. You brought chaos, laughter, and 
-              pure magic everywhere you went.
+              Hii Billi 🐱, sorry for the delay in your gift… but issme teri bhi galti hai 😤🤣  
+              Tu ne kabhi bataya hi nahi ki tujhe kya chahiye, aur address bhi deny mode ON 🙄.  
+              So jo cheez mere control me thi — ek website — woh bana di 😌✨  
+              Sorry agar thodi kami reh gayi ho, time kam tha (papers bhi chal rahe the 😭).  
+              Anyway… Happy Birthday, Iron Mahi 🤣⚡
             </p>
             <p>
-              From bunking classes to late-night talks, from stupid inside jokes to crying over 
-              exam results together — every moment with you has been a treasure. You're not just 
-              my best friend, you're my partner in crime, my 3 AM therapist, and the person who 
-              knows all my secrets (and still chooses to stick around 😂).
+              Hmm… honestly samajh nahi aa raha kya likhu, but chalo try karta hu.  
+              Officially 2 saal ho gaye school chhode hue, aur hum mile bhi nahi.  
+              Par sach bolu? Mujhe lagta hi nahi ki kuch change hua.  
+              We still talk exactly the same… same dumb fights, same teasing,  
+              same Billi vibes 😭💗  
+              Aur haan, ek baat tu bilkul sahi bolti hai —  
+              “dosti ko time se koi farak nahi padta” — iss baat se 100% agree hu.  
+              (Baaki baaton se kabhi nahi 🤣)
+
             </p>
             <p>
-              This website is my way of saying: You matter. Your friendship is priceless. 
-              And I'm so grateful the stars aligned to bring us together.
-            </p>
-            <p>
-              May this year bring you endless joy, countless adventures, and all the love you deserve.
-              Keep shining, keep dreaming, and keep being the incredible person you are.
+              Aur haan sun… thodi ZID kar liya kar 😤  
+              Teri saari baat maan lene ki aadat cute hai,  
+              but bhass karne me zyada maza aata hai 😭🔥  
+              Aur apne birthday ke liye thoda excited raha kar yaar…  
+              ek hi chair pe poora din mat padi rehna 🪑😑  
+              Thoda ghoom liya kar, thoda life enjoy kar.  
             </p>
             <p className="letter-signature">
               Forever your chaotic best friend,<br />
