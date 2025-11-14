@@ -15,8 +15,8 @@ const BirthdayImage = () => {
           transition={{ duration: 0.3 }}
         >
           <img 
-            src="https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/1364.JPG" 
-            alt="https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/1364.JPG"  
+            src="https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/JPEG%20image-4E4B-BDCC-CF-2.jpeg" 
+            alt="https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/JPEG%20image-4E4B-BDCC-CF-2.jpeg"  
           />
           
           {/* Floating Emojis around Image - NO HEARTS */}
