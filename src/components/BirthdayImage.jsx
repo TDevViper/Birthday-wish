@@ -14,10 +14,18 @@ const BirthdayImage = () => {
           whileHover={{ scale: 1.05, rotate: 2 }}
           transition={{ duration: 0.3 }}
         >
-          <img 
-            src="https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/JPEG%20image-4E4B-BDCC-CF-2.jpeg" 
-            alt="https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/JPEG%20image-4E4B-BDCC-CF-2.jpeg"  
-          />
+          <img
+  src="https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/JPEG%20image-4E4B-BDCC-CF-2.jpeg"
+  alt="Billi Birthday"
+  style={{
+    transform: "rotate(-90deg)",
+    width: "100%",
+    height: "auto",
+    objectFit: "cover",
+    borderRadius: "20px"
+  }}
+/>
+
           
           {/* Floating Emojis around Image - NO HEARTS */}
           {['🎉', '🎂', '🎈', '🌟','❤️', '🎊', '✨'].map((emoji, i) => (
