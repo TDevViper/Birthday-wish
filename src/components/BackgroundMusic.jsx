@@ -21,11 +21,7 @@ const BackgroundMusic = () => {
   };
 
   useEffect(() => {
-    // Auto-hide prompt after 5 seconds
-    const timer = setTimeout(() => {
-      setShowPrompt(false);
-    }, 5000);
-
+    const timer = setTimeout(() => setShowPrompt(false), 5000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -33,11 +29,13 @@ const BackgroundMusic = () => {
     <>
       {/* AUDIO ELEMENT */}
       <audio ref={audioRef} loop>
-        <source src="/memories/Pehli Nazar Mein Race 320 Kbps.mp3" type="audio/mpeg" />
-
+        <source
+          src="https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/Pehli%20Nazar%20Mein%20Race%20320%20Kbps.mp3"
+          type="audio/mpeg"
+        />
       </audio>
 
-      {/* MUSIC TOGGLE BUTTON */}
+      {/* BUTTON */}
       <motion.button
         className="music-toggle-btn"
         onClick={toggleMusic}
@@ -59,7 +57,7 @@ const BackgroundMusic = () => {
         </motion.div>
       </motion.button>
 
-      {/* PROMPT TO PLAY MUSIC */}
+      {/* PROMPT */}
       <AnimatePresence>
         {showPrompt && (
           <motion.div
@@ -67,10 +65,8 @@ const BackgroundMusic = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ delay: 1 }}
           >
             <p>Click the music icon to play background music 🎶</p>
-
             <motion.div
               className="prompt-arrow"
               animate={{ y: [0, -10, 0] }}
@@ -82,7 +78,7 @@ const BackgroundMusic = () => {
         )}
       </AnimatePresence>
 
-      {/* MUSIC WAVE ANIMATION */}
+      {/* WAVES */}
       {isPlaying && (
         <div className="music-waves">
           {[...Array(5)].map((_, i) => (

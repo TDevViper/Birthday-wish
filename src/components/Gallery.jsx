@@ -5,28 +5,29 @@ const Gallery = ({ onClose }) => {
   const [revealedPhotos, setRevealedPhotos] = useState([]);
 
   const photos = [
-    {
-      id: 1,
-      src: "/memories/photo1.jpg",
-      title: "Gym de shocken 💗",
-      caption: "Strongest but cutest 😭🔥",
-      year: "2024",
-    },
-    {
-      id: 2,
-      src: "/memories/photo2.jpg",
-      title: "The triplet madness 😂",
-      caption: "Chaos but fun always",
-      year: "2023",
-    },
-    {
-      id: 3,
-      src: "/memories/photo3.jpg",
-      title: "My Personal Fav ❤️",
-      caption: "This pic >>> everything",
-      year: "2024",
-    },
-  ];
+  {
+    id: 1,
+    src: "https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/1364.JPG",
+    title: "Gym de shocken 💗",
+    caption: "Strongest but cutest 😭🔥",
+    year: "2024",
+  },
+  {
+    id: 2,
+    src: "https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/IMG_0805.HEIC",
+    title: "The triplet madness 😂",
+    caption: "Chaos but fun always",
+    year: "2023",
+  },
+  {
+    id: 3,
+    src: "https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/JPEG%20image-4E4B-BDCC-CF-2.jpeg",
+    title: "My Personal Fav ❤️",
+    caption: "This pic >>> everything",
+    year: "2024",
+  },
+];
+
 
   const togglePhoto = (photoId) => {
     if (revealedPhotos.includes(photoId)) {
