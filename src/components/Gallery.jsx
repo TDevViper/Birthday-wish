@@ -13,11 +13,11 @@ const Gallery = ({ onClose }) => {
     year: "2024",
   },
   {
-    id: 2,
-    src: "https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/photo2.jpg",
-    title: "The triplet madness 😂",
-    caption: "Chaos but fun always",
-    year: "2023",
+  id: 2,
+  src: "https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/photo2.jpg",
+  title: "The triplet madness 😂",
+  caption: "Chaos but fun always",
+  year: "2023",
   },
   {
     id: 3,
