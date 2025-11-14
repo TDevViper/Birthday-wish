@@ -2576,6 +2576,12 @@ welcome-screen {
     display: none;
   }
 }
+.birthday-image-container {
+  position: relative;
+  left: 0;                 /* Move to LEFT */
+  transform: none;         /* Remove centering */
+  margin: 40px 0 40px 20px; /* Add small left margin */
+}
 
 @media (max-width: 480px) {
   .welcome-title {
