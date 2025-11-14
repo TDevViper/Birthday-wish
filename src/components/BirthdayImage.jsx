@@ -49,7 +49,7 @@ const BirthdayImage = () => {
         {/* Birthday Badge */}
         <motion.div
           className="birthday-badge"
-          initial={{ scale: 0, rotate: -45 }}
+          initial={{ scale: 0, }}
           animate={{ scale: 1, rotate: 0 }}
           transition={{ duration: 0.8, delay: 1.5, type: "spring", bounce: 0.6 }}
         >
