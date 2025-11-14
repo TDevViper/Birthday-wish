@@ -13,9 +13,16 @@ html, body {
 }
 
 .app {
-  max-width: 480px;   /* Mobile width */
-  margin: 0 auto;     /* Center full website */
-  padding: 0;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(180deg, 
+    #0a0133 0%, 
+    #1a0a3e 35%, 
+    #2d1b4e 70%,
+    #3d1f5e 100%
+  );
+  overflow: hidden;
 }
 
 .birthday-image-container {
@@ -1114,7 +1121,158 @@ body {
   transform: rotate(-45deg);
   animation: rotateMilky 180s linear infinite;
 }
+@media (max-width: 1200px) {
+  .birthday-image-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 100px auto 40px;
+  }
 
+  .navigation-section {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .birthday-image-container {
+    width: 260px;
+    margin-top: 70px;
+  }
+
+  .nav-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .typing-quote {
+    font-size: 1.3rem;
+  }
+
+  .floating-heart:nth-child(n+9),
+  .confetti-piece:nth-child(n+16) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+
+  .birthday-image-container {
+    width: 240px;
+    margin-top: 60px;
+  }
+
+  .navigation-section {
+    max-width: 400px;
+  }
+
+  .nav-buttons {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .nav-button-cool {
+    padding: 20px;
+  }
+
+  .typing-quote {
+    font-size: 1.1rem;
+    max-width: 95%;
+    padding: 0 10px;
+  }
+
+  .gallery-modal-reveal,
+  .mini-quiz-modal,
+  .spin-wheel-modal,
+  .letter-modal-enhanced {
+    padding: 25px 15px;
+    max-width: 95%;
+  }
+
+  .mini-question-text {
+    font-size: 1.15rem;
+  }
+
+  .wheel-container {
+    width: 260px;
+    height: 260px;
+  }
+
+  .memory-title-card {
+    padding: 15px;
+  }
+
+  .title-text h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .birthday-image-container {
+    width: 220px;
+  }
+
+  .welcome-title {
+    font-size: 2.8rem;
+  }
+
+  .welcome-name {
+    font-size: 2.2rem;
+  }
+
+  .typing-quote {
+    font-size: 1rem;
+  }
+
+  .nav-icon-cool {
+    font-size: 1.8rem;
+  }
+
+  .nav-text-cool {
+    font-size: 0.95rem;
+  }
+
+  .wheel-container {
+    width: 240px;
+    height: 240px;
+  }
+
+  .spin-button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mini-quiz-title {
+    font-size: 1.6rem;
+  }
+
+  .gallery-title-fancy {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .birthday-image-container {
+    width: 200px;
+  }
+
+  .typing-quote {
+    font-size: 0.9rem;
+  }
+
+  .wheel-container {
+    width: 220px;
+    height: 220px;
+  }
+}
 @keyframes rotateMilky {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -2358,5 +2516,82 @@ welcome-screen {
   .photo-container {
     margin: 0 10px;
     padding: 15px;
+  }
+}
+
+/* ==================== MOBILE OPTIMIZATIONS ==================== */
+@media (max-width: 600px) {
+  /* Center everything on mobile */
+  .app {
+    padding: 10px;
+  }
+
+  .birthday-image-container {
+    width: 240px;
+    margin-top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+
+  .navigation-section {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    right: auto;
+    bottom: auto;
+  }
+
+  .nav-buttons {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .nav-button-cool {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .typing-quote {
+    font-size: 1.1rem;
+    max-width: 95%;
+    padding: 0 10px;
+  }
+
+  /* Modals */
+  .gallery-modal-reveal,
+  .mini-quiz-modal,
+  .spin-wheel-modal,
+  .letter-modal,
+  .music-modal {
+    padding: 25px 15px;
+    max-width: 95%;
+  }
+
+  /* Hide some floating elements on mobile */
+  .floating-heart:nth-child(n+7),
+  .confetti-piece:nth-child(n+13),
+  .floating-balloon:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 2.8rem;
+  }
+
+  .welcome-name {
+    font-size: 2.2rem;
+  }
+
+  .mini-question-text {
+    font-size: 1.1rem;
+  }
+
+  .wheel-container {
+    width: 240px;
+    height: 240px;
   }
 }
