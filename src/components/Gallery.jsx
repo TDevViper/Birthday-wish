@@ -14,7 +14,7 @@ const Gallery = ({ onClose }) => {
   },
   {
     id: 2,
-    src: "https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/IMG_0805.HEIC",
+    src: "https://zht60kf2uzgrjhve.public.blob.vercel-storage.com/photo2.jpg",
     title: "The triplet madness 😂",
     caption: "Chaos but fun always",
     year: "2023",
